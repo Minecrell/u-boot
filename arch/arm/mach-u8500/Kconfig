@@ -6,6 +6,11 @@ config SYS_SOC
 choice
 	prompt "U8500 board selection"
 
+config TARGET_STEMMY
+	bool "Samsung (stemmy) board"
+
 endchoice
+
+source "board/ste/stemmy/Kconfig"
 
 endif
